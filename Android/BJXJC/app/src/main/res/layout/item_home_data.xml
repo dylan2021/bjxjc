@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_2"
+        android:background="@drawable/bt_gray_01"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_8">
+
+        <ImageView
+            android:id="@+id/tv_icon"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:src="@mipmap/ic_status_0"
+            />
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_lgray"
+            android:textSize="@dimen/sp_13"
+            android:layout_marginTop="@dimen/dp_3"
+            android:textStyle="bold"
+            tools:text="100/213" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_3"
+            android:textColor="@color/text_lgray"
+            android:textSize="@dimen/sp_12"
+            tools:text="今日工单完成" />
+
+    </LinearLayout>
+</LinearLayout>

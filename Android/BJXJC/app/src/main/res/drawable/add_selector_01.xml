@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>       
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">     
+<!-- 默认时的背景图片-->      
+<!--<item Android:drawable="@drawable/icon_back_01" /> -->   
+
+  
+<!-- 没有焦点时的背景图片 -->      
+<item   
+   Android:state_window_focused="false"        
+   Android:drawable="@mipmap/icon_add_01"
+   />   
+   
+<!--获得焦点时的图片背景-->      
+<item   
+   Android:state_focused="true"   
+   Android:drawable="@mipmap/icon_add_02"
+  
+   />       
+   
+<item   
+   Android:state_focused="false"   
+   Android:state_pressed="true"     
+   Android:drawable="@mipmap/icon_add_02"
+   /> 
+</selector>   

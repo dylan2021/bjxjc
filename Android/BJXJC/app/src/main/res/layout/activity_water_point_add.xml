@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/witle"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/activity_title_bar" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_ver_thumb">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="所属预警" />
+
+                    <include layout="@layout/item_must" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/belong_warm_tv"
+                    style="@style/from_field_spinner_style" />
+
+            </LinearLayout>
+
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="积水位置" />
+
+                    <include layout="@layout/item_must" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/water_loc_et"
+                    style="@style/from_field_style" />
+
+
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积水深度"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <include layout="@layout/item_must" />
+
+                <SeekBar
+                    android:id="@+id/seeper_depth"
+                    style="@android:style/Widget.Holo.SeekBar"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:min="0"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/tv_SeeperDepth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="0"
+                    android:textColor="@color/text_lgray"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cm"
+                    android:textColor="@color/text_lgray"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积水面积"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <include layout="@layout/item_must" />
+
+                <SeekBar
+                    android:id="@+id/sb_SeeperArea"
+                    style="@android:style/Widget.Holo.SeekBar"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:max="1500"
+                    android:min="0"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/tv_seeper_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="0"
+                    android:textColor="@color/text_lgray"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m²"
+                    android:textColor="@color/text_lgray"
+                    android:textSize="@dimen/sp_14" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/from_lin_style"
+                android:visibility="gone">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="积水等级" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_SeeperLevel"
+                    style="@style/from_field_spinner_style" />
+
+
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="积水原因" />
+
+                    <include layout="@layout/item_must" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/water_reason"
+                    style="@style/from_field_spinner_style"
+                    android:text=" " />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="警情描述" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/warm_detail_desc_tv"
+                    style="@style/from_field_spinner_style"
+                    android:text=" " />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="处置队伍" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dispose_team_tv"
+                    style="@style/from_field_spinner_style" />
+
+
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="处  置  人" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dispose_person_tv"
+                    style="@style/from_field_spinner_style" />
+
+
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+
+            <LinearLayout style="@style/from_lin_style">
+
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="处置状态" />
+
+                    <include layout="@layout/item_must" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/from_field_style">
+
+                    <include layout="@layout/layout_ck_status" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/from_lin_style"
+                android:visibility="gone">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="影响车辆" />
+
+                    <include layout="@layout/item_must" />
+                </LinearLayout>
+
+
+                <CheckBox
+                    android:id="@+id/cb_IsCarPass"
+                    style="@style/from_field_style"
+                    android:button="@drawable/checkbox_selector1" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/from_lin_style"
+                android:visibility="gone">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="紧急处置" />
+
+                    <include layout="@layout/item_must" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_is_urgent_handle"
+                    style="@style/from_field_style"
+                    android:button="@drawable/checkbox_selector1" />
+
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+
+            <LinearLayout style="@style/from_lin_style">
+
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="附件状态" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/from_field_style">
+
+                    <include layout="@layout/layout_ck_file_status" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View style="@style/style_line_1px" />
+
+            <include layout="@layout/layout_file_upload" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/dp_5"
+        android:background="@drawable/bt_blue_01"
+        android:text="保存"
+        android:textColor="@color/baise"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

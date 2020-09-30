@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/witle"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:background="@color/witle"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    style="@style/px24_212121"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/filter_tv_height"
+                    android:layout_marginLeft="@dimen/filter_tv_margin_left"
+                    android:layout_weight="1.4"
+                    android:background="@drawable/input_tv_spinner2"
+                    android:gravity="center_vertical"
+                    android:hint="年份"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/filter_tv_padding_left" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/px24_212121"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/filter_tv_height"
+                    android:layout_marginLeft="@dimen/filter_tv_margin_left"
+                    android:layout_weight="1.8"
+                    android:background="@drawable/input_tv_spinner2"
+                    android:gravity="center_vertical"
+                    android:hint="处理状态"
+                    android:paddingLeft="@dimen/filter_tv_padding_left" />
+
+                <TextView
+                    android:id="@+id/tv_warm"
+                    style="@style/px24_212121"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/filter_tv_height"
+                    android:layout_marginLeft="@dimen/filter_tv_margin_left"
+                    android:layout_weight="3"
+                    android:background="@drawable/input_tv_spinner2"
+                    android:gravity="center_vertical"
+                    android:hint="所属预警"
+                    android:paddingLeft="@dimen/filter_tv_padding_left" />
+            </LinearLayout>
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/refreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:overScrollMode="never" />
+
+                <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <!--地图-->
+            <com.esri.android.map.MapView
+                android:id="@+id/map"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <!--工具栏-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_10"
+                android:gravity="right"
+                android:orientation="vertical">
+                <!--定位到当前位置-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="@drawable/bt_witle_02"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_5">
+
+                    <LinearLayout
+                        android:id="@+id/tv_map_location"
+                        android:layout_width="31dip"
+                        android:layout_height="31dip"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="22dip"
+                            android:layout_height="22dip"
+                            android:layout_marginTop="@dimen/dp_3"
+                            android:layout_marginBottom="@dimen/dp_3"
+                            android:gravity="center"
+                            android:src="@drawable/ic_my_location_black_24dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--上报积水点-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="@drawable/bt_witle_02"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_3">
+
+                    <TextView
+                        android:id="@+id/tv_map_addpoint"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:gravity="center"
+                        android:text="上报"
+                        android:textColor="@color/app_title_color"
+                        android:textSize="@dimen/sp_12"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <!--预留-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_3"></LinearLayout>
+                <!--缩放工具-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="@drawable/bt_witle_02"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_3">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_map_in"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:gravity="center"
+                            android:text="＋"
+                            android:textColor="@color/app_title_color"
+                            android:textSize="@dimen/sp_20"
+
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dip"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:background="@color/lightgray"
+                            android:gravity="center"
+                            android:orientation="vertical" />
+
+                        <TextView
+                            android:id="@+id/tv_map_out"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:gravity="center"
+                            android:text="－"
+                            android:textColor="@color/app_title_color"
+                            android:textSize="@dimen/sp_20"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

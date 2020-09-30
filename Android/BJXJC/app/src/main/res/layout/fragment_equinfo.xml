@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/witle"
+    android:orientation="vertical">
+    <!--基础信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/witle"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_2">
+
+        <LinearLayout style="@style/from_equ_lin_style">
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="设备型号:"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Spec"
+                style="@style/from_field_style" />
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="规        格:"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Models"
+                style="@style/from_field_style" />
+        </LinearLayout>
+
+        <View style="@style/style_line_1px" />
+
+        <LinearLayout style="@style/from_equ_lin_style">
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="品        牌:"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Brand"
+                style="@style/from_field_style" />
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="出厂日期:"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_ED"
+                style="@style/from_field_style" />
+        </LinearLayout>
+
+        <View style="@style/style_line_1px" />
+
+        <LinearLayout style="@style/from_equ_lin_style">
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="安装位置:"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Position"
+                style="@style/from_field_style" />
+        </LinearLayout>
+
+        <View style="@style/style_line_1px" />
+
+        <LinearLayout style="@style/from_equ_lin_style">
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="供  应  商:"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Supplier"
+                style="@style/from_field_style" />
+        </LinearLayout>
+
+        <View style="@style/style_line_1px" />
+
+        <LinearLayout style="@style/from_equ_lin_style">
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="生产厂家:"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Manufacturer"
+                style="@style/from_field_style" />
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="保修期限:"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Guarantee"
+                style="@style/from_field_style" />
+        </LinearLayout>
+
+        <View style="@style/style_line_1px" />
+
+        <LinearLayout style="@style/from_equ_lin_style">
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="出厂编号:"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_ENo"
+                style="@style/from_field_style" />
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="安装日期:"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_InstalDatel"
+                style="@style/from_field_style" />
+        </LinearLayout>
+
+        <View style="@style/style_line_1px" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_2">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="2"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_11"
+            android:text="1#水泵" />
+
+
+        <LinearLayout
+            android:id="@+id/item_value"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:gravity="center"
+               />
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp_2"
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_11"
+                android:text="19.93" />
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:gravity="left"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_11"
+                android:text="mg/L" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_weight="3"
+            android:gravity="right|center"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_11"
+            android:text="2019-6-14 09:23" />
+
+    </LinearLayout>
+</LinearLayout>

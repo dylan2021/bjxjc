@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btm"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="50dip"
+            android:background="@drawable/bt_witle_01"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_title_bar" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingTop="@dimen/dp_2">
+
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="完成人员" />
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/tv_CompleteUser"
+                        android:layout_marginStart="@dimen/dp_5"
+                        style="@style/from_field_style" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="开始时间" />
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_BeginDate"
+                        android:layout_marginStart="@dimen/dp_5"
+                        style="@style/from_field_time_style" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="完成时间" />
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_CompleteDate"
+                        android:layout_marginStart="@dimen/dp_5"
+                        style="@style/from_field_time_style" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="故障级别" />
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_Level"
+                        android:layout_marginStart="@dimen/dp_5"
+                        style="@style/from_field_spinner_style" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="故障类别" />
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginStart="@dimen/dp_5"
+                        android:id="@+id/tv_FaultCategory"
+                        style="@style/from_field_spinner_style" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="维修情况" />
+
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_marginStart="@dimen/dp_5"
+                        android:id="@+id/tv_Reason"
+                        style="@style/from_field_style" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/app_line2_cloor"
+                android:orientation="horizontal" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/no"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="取消"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_15" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_line2_cloor"
+                    android:orientation="horizontal" />
+
+
+                <TextView
+                    android:id="@+id/yes"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="确定"
+                    android:textColor="@color/app_title_color"
+                    android:textSize="@dimen/sp_15" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/char_Keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical" />
+
+
+</LinearLayout>

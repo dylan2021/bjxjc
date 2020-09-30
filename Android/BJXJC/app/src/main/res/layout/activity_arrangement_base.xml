@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baise"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout style="@style/from_lin_style">
+
+            <LinearLayout style="@style/from_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="队伍名称" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_1"
+                style="@style/from_field_style"
+                android:text=" " />
+
+        </LinearLayout>
+
+
+        <View style="@style/style_line_1px" />
+
+        <LinearLayout style="@style/from_lin_style">
+
+            <LinearLayout style="@style/from_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="管  理  所" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_5"
+                style="@style/from_field_style"
+                android:text=" " />
+
+        </LinearLayout>
+
+
+        <View style="@style/style_line_1px" />
+
+        <LinearLayout style="@style/from_lin_style">
+
+            <LinearLayout style="@style/from_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="队伍成员" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_2"
+                style="@style/from_field_spinner_style"
+                android:text=" " />
+
+        </LinearLayout>
+
+
+        <View style="@style/style_line_1px" />
+
+
+
+        <LinearLayout style="@style/from_lin_style">
+
+            <LinearLayout style="@style/from_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="使用车辆" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_3"
+                style="@style/from_field_spinner_style"
+                android:text=" " />
+
+        </LinearLayout>
+
+
+        <View style="@style/style_line_1px" />
+
+
+        <LinearLayout style="@style/from_lin_style">
+
+            <LinearLayout style="@style/from_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:text="物资配备" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_4"
+                style="@style/from_field_style"
+                android:text=" " />
+
+        </LinearLayout>
+
+
+        <View style="@style/style_line_1px" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bt_blue_01"
+            android:text="@string/save"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

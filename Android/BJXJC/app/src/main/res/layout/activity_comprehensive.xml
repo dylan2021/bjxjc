@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/witle"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_bar" />
+
+
+    <RelativeLayout
+        android:id="@+id/map_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!--地图-->
+        <com.esri.android.map.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <!--工具栏-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:gravity="right"
+            android:orientation="vertical">
+
+
+            <!--定位到当前位置-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_witle_02"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_3">
+
+                <LinearLayout
+                    android:id="@+id/tv_map_location"
+                    android:layout_width="31dip"
+                    android:layout_height="31dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="22dip"
+                        android:layout_height="22dip"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:layout_marginBottom="@dimen/dp_3"
+                        android:gravity="center"
+                        android:src="@drawable/ic_my_location_black_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="31dip"
+                    android:layout_height="0.5dip"
+                    android:background="@color/lightgray"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/tv_map_lable"
+                    android:layout_width="31dip"
+                    android:layout_height="31dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:background="@mipmap/icfont_info"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="31dip"
+                    android:layout_height="0.5dip"
+                    android:background="@color/lightgray"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/tv_map_legend"
+                    android:layout_width="31dip"
+                    android:layout_height="31dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:background="@mipmap/icfont_legend"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--缩放工具-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/bt_witle_02"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_3">
+
+                    <TextView
+                        android:id="@+id/tv_map_in"
+                        android:layout_width="31dip"
+                        android:layout_height="31dip"
+                        android:gravity="center"
+                        android:text="＋"
+                        android:textColor="@color/app_title_color"
+                        android:textSize="@dimen/sp_20"
+
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:layout_marginBottom="@dimen/dp_3"
+                        android:background="@color/lightgray"
+                        android:gravity="center"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:id="@+id/tv_map_out"
+                        android:layout_width="31dip"
+                        android:layout_height="31dip"
+                        android:gravity="center"
+                        android:text="－"
+                        android:textColor="@color/app_title_color"
+                        android:textSize="@dimen/sp_20"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--图例-->
+        <LinearLayout
+            android:id="@+id/lin_legend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:background="@drawable/bt_witle_02"
+            android:gravity="left"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_5">
+
+                <LinearLayout
+                    android:layout_width="135dip"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mainColor"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/dm005"
+                        android:text="图例"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_close"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/icon_close_01"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/tab_line_color"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:overScrollMode="never" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

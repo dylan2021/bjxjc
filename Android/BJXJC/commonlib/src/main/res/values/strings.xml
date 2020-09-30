@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CommonLib</string>
+
+
+    <!--树形控件-->
+    <string name="ic_email">&#xe087;</string>
+    <string name="ic_add">&#xe006;</string>
+    <string name="ic_add_alarm">&#xe007;</string>
+    <string name="ic_add_box">&#xe008;</string>
+    <string name="ic_add_circle">&#xe009;</string>
+    <string name="ic_add_circle_outline">&#xe00a;</string>
+    <string name="ic_folder">&#xe09d;</string>
+    <string name="ic_folder_mydrive">&#xe09e;</string>
+    <string name="ic_folder_shared">&#xe09f;</string>
+    <string name="ic_close">&#xe048;</string>
+    <string name="ic_null"> </string>
+    <string name="ic_keyboard_arrow_down">&#xe0c5;</string>
+    <string name="ic_keyboard_arrow_left">&#xe0c6;</string>
+    <string name="ic_keyboard_arrow_right">&#xe0c7;</string>
+    <string name="ic_keyboard_arrow_up">&#xe0c8;</string>
+    <string name="ic_thumbs_down">&#xe17d;</string>
+    <string name="ic_thumbs_up">&#xe17e;</string>
+    <string name="ic_star">&#xe161;</string>
+    <string name="ic_star_outline">&#xe163;</string>
+    <string name="ic_check_circle_blank">&#xe03e;</string>
+
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">北京新机场</string>
+    <string name="app_full_name">北京新机场</string>
+    <string name="mainactivity_title_string">北京新机场防汛调度</string>
+    <string name="gps_title_string">定位失败,GPS信号差!</string>
+    <!--home-->
+    <string name="home">首页</string>
+    <string name="msg">消息</string>
+    <string name="follow">任务</string>
+    <string name="stats">统计</string>
+    <string name="user">我的</string>
+
+    <string name="zero">0</string>
+
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="str_circle">&#xe652;</string>
+    <string name="str_Greater">&#xe69e;</string>
+    <string name="str_Less">&#xe6a0;</string>
+    <string name="str_Timeout">&#xe648;</string>
+    <string name="str_Interrupt">&#xe6a1;</string>
+    <string name="str_fuzheren">&#xe6a2;</string>
+    <string name="str_dianhua">&#xe69c;</string>
+    <string name="str_jishuimianji">&#xe69d;</string>
+    <string name="str_yushuichimianji">&#xe69f;</string>
+    <string name="str_info">&#xe608;</string>
+    <string name="str_tuli">&#xe601;</string>
+    <string name="no_network">网络异常,请检查网络设置</string>
+    <string name="no_data">数据为空</string>
+    <string name="request_failure">请求失败,请稍后重试</string>
+    <string name="change_pwd_tip">如果忘记原密码,请联系管理员</string>
+    <string name="cannot_empty">不能为空</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_later">不升级</string>
+    <string name="reLogin">重新登录</string>
+    <string name="server_exception">服务器异常,稍后重试</string>
+    <string name="pwd_change_success_reLogin_msg">密码修改成功,请重新登录</string>
+    <string name="change">修改</string>
+    <string name="update">更新</string>
+    <string name="loading">加载中</string>
+    <string name="close">关闭</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="auto_login">自动登录</string>
+    <string name="dismiss_list">隐藏列表</string>
+    <string name="show_list">显示列表</string>
+    <string name="request">查询</string>
+    <string name="search">搜索</string>
+    <string name="hand_group">处理小组</string>
+    <string name="save">提交</string>
+    <string name="no_attachment">暂无附件</string>
+    <string name="pic_upload_tip_most_8">单次最多只能选择8张图片哦</string>
+    <string name="not_cur_flood_people">您不是当前防汛人员,无法编辑</string>
+    <string name="water_finish">此积水点已处置完成</string>
+
+
+</resources>

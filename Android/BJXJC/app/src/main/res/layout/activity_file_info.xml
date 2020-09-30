@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:background="@drawable/ic_info" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_weight="1"
+            android:text="图片文件"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+        <TextView
+            android:id="@+id/tv_img"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="--mb"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_12" />
+        <CheckBox
+            android:id="@+id/ck_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_selector1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:background="@drawable/ic_info" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_weight="1"
+            android:text="视频文件"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+        <TextView
+            android:id="@+id/tv_video"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="--mb"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_12" />
+        <CheckBox
+            android:id="@+id/ck_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_selector1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:background="@drawable/ic_info" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_weight="1"
+            android:text="音频文件"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+        <TextView
+            android:id="@+id/tv_audio"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="--mb"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_12" />
+        <CheckBox
+            android:id="@+id/ck_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_selector1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:background="@drawable/ic_info" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_weight="1"
+            android:text="地图缓存"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+        <TextView
+            android:id="@+id/tv_map"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="--mb"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_12" />
+        <CheckBox
+            android:id="@+id/ck_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_selector1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:background="@drawable/ic_info" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_weight="1"
+            android:text="收集的日志缓存"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+        <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="--mb"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_12" />
+        <CheckBox
+            android:id="@+id/ck_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_selector1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:background="@drawable/ic_info" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_weight="1"
+            android:text="用户信息和密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+        <CheckBox
+            android:id="@+id/ck_userinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_selector1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|bottom"
+        android:padding="5dip">
+
+        <Button
+            android:id="@+id/bt_clear"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bt_blue_01"
+            android:text="确定清除"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/sp_17" />
+    </LinearLayout>
+
+</LinearLayout>

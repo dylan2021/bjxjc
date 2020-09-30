@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baise"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_bar" />
+
+
+    <!--基础信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/witle"
+        android:orientation="vertical">
+
+
+        <LinearLayout style="@style/from_lin_style">
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:layout_width="wrap_content"
+                    android:text="设备名称:" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_FullName"
+                style="@style/from_field_style" />
+        </LinearLayout>
+
+        <View style="@style/style_line_1px" />
+
+        <LinearLayout style="@style/from_lin_style">
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:layout_width="match_parent"
+                    android:text="设备编号:" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_EquNo"
+                style="@style/from_field_style" />
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:layout_width="wrap_content"
+                    android:text="设备类型:" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_EquTypeName"
+                style="@style/from_field_style" />
+        </LinearLayout>
+
+        <View style="@style/style_line_1px" />
+
+        <LinearLayout style="@style/from_lin_style">
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:layout_width="match_parent"
+                    android:text="区域位置:" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_PumpRoomName"
+                style="@style/from_field_style" />
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:layout_width="wrap_content"
+                    android:text="资产状态:" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_AssetState"
+                style="@style/from_field_style" />
+        </LinearLayout>
+
+        <View style="@style/style_line_1px" />
+
+        <LinearLayout style="@style/from_lin_style">
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:layout_width="match_parent"
+                    android:text="ABC分类:" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_ABC"
+                style="@style/from_field_style" />
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:layout_width="wrap_content"
+                    android:text="所属组织:" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_F_CompanyId"
+                style="@style/from_field_style" />
+        </LinearLayout>
+
+        <View style="@style/style_line_1px" />
+
+        <LinearLayout style="@style/from_lin_style">
+
+            <LinearLayout style="@style/from_equ_title_lin_style">
+
+                <TextView
+                    style="@style/from_title_style"
+                    android:layout_width="match_parent"
+                    android:text="上级设备:" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_F_ParentId"
+                style="@style/from_field_style" />
+
+        </LinearLayout>
+
+        <View style="@style/style_line_1px" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_list_space" />
+
+    <!--tab-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/witle"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_tab_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tab_1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_3"
+                android:paddingTop="@dimen/dp_8"
+                android:text="附属信息"
+                android:textColor="@drawable/sel_tab_color"
+                android:textSize="@dimen/tab_page_textSize" />
+
+            <TextView
+                android:id="@+id/tv_tab_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:background="@color/app_title_color"
+                android:gravity="center"
+                android:textColor="@drawable/sel_tab_color"
+                android:textSize="@dimen/tab_page_textSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_tab_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tab_2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_3"
+                android:paddingTop="@dimen/dp_8"
+                android:text="原厂备件"
+                android:textColor="@drawable/sel_tab_color"
+                android:textSize="@dimen/tab_page_textSize" />
+
+            <TextView
+                android:id="@+id/tv_tab_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:gravity="center"
+                android:textColor="@drawable/sel_tab_color"
+                android:textSize="@dimen/tab_page_textSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_tab_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tab_3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_3"
+                android:paddingTop="@dimen/dp_8"
+                android:text="设备参数"
+                android:textColor="@drawable/sel_tab_color"
+                android:textSize="@dimen/tab_page_textSize" />
+
+            <TextView
+                android:id="@+id/tv_tab_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:gravity="center"
+                android:textColor="@drawable/sel_tab_color"
+                android:textSize="@dimen/tab_page_textSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_tab_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tab_4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_3"
+                android:paddingTop="@dimen/dp_8"
+                android:text="相关资料"
+                android:textColor="@drawable/sel_tab_color"
+                android:textSize="@dimen/tab_page_textSize" />
+
+            <TextView
+                android:id="@+id/tv_tab_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:gravity="center"
+                android:textColor="@drawable/sel_tab_color"
+                android:textSize="@dimen/tab_page_textSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_tab_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tab_5_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_3"
+                android:paddingTop="@dimen/dp_8"
+                android:text="维修信息"
+                android:textColor="@drawable/sel_tab_color"
+                android:textSize="@dimen/tab_page_textSize" />
+
+            <TextView
+                android:id="@+id/tv_tab_5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:gravity="center"
+                android:textColor="@drawable/sel_tab_color"
+                android:textSize="@dimen/tab_page_textSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_tab_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tab_6_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_3"
+                android:paddingTop="@dimen/dp_8"
+                android:text="保养信息"
+                android:textColor="@drawable/sel_tab_color"
+                android:textSize="@dimen/tab_page_textSize" />
+
+            <TextView
+                android:id="@+id/tv_tab_6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_3"
+                android:gravity="center"
+                android:textColor="@drawable/sel_tab_color"
+                android:textSize="@dimen/tab_page_textSize" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View style="@style/style_line_1px" />
+
+
+    <include layout="@layout/layout_list_space" />
+    <!--fragment-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/witle"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/char_Keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/submit_bt"
+        style="@style/px26_white"
+        android:layout_width="@dimen/buttom_save_bt_width"
+        android:layout_height="@dimen/buttom_save_bt_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_5"
+        android:background="@drawable/selector_login_bt"
+        android:gravity="center"
+        android:text="@string/save" />
+</LinearLayout>

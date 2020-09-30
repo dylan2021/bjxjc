@@ -1,0 +1,1629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baise"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_bar" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_ver_thumb">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--一期-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--线条-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/gray_bfbdbd" />
+
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="日处理量"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_01"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="负荷率"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_02"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="污泥外运量（含水率）"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="#eaeaea"
+                                    android:gravity="center"
+                                    android:paddingBottom="@dimen/dp_4"
+                                    android:paddingTop="@dimen/dp_4"
+                                    android:text="一期"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp_11" />
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/dp_1"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/gray_bfbdbd" />
+
+                                <TextView
+                                    android:layout_width="0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="#eaeaea"
+                                    android:gravity="center"
+                                    android:paddingBottom="@dimen/dp_4"
+                                    android:paddingTop="@dimen/dp_4"
+                                    android:text="二期"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp_11" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_1"
+                                android:background="@color/gray_bfbdbd" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/report_view_one_03"
+                                    android:layout_width="0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:paddingBottom="@dimen/dp_4"
+                                    android:paddingTop="@dimen/dp_4"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/sp_11" />
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/dp_1"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/gray_bfbdbd" />
+
+                                <TextView
+                                    android:id="@+id/report_view_two_03"
+                                    android:layout_width="0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:paddingBottom="@dimen/dp_4"
+                                    android:paddingTop="@dimen/dp_4"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/sp_11" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="水质指标"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="进水"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="出水"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="COD(mg/L)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_04"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_05"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="氨氮(mg/L)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_06"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_07"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="TN(mg/L)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_08"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_09"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="TP(mg/L)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_10"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_11"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="SS(mg/L)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_12"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_13"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="PH"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_14"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_one_15"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--二期-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!--标题-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#eaeaea"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="二  期"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <!--线条-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/gray_bfbdbd" />
+
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="日处理量"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_01"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="负荷率"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_02"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="污泥外运量（含水率）"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="水质指标"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="进水"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="出水"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="COD(mg/L)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_04"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_05"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="氨氮(mg/L)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_06"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_07"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="TN(mg/L)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_08"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_09"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="TP(mg/L)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_10"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_11"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="SS(mg/L)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_12"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_13"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+                <!--显示数据-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--值-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="#eaeaea"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="PH"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_14"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray_bfbdbd" />
+
+                        <TextView
+                            android:id="@+id/report_view_two_15"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <!--线条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/gray_bfbdbd" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--标题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eaeaea"
+                android:gravity="center"
+                android:padding="@dimen/dp_4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="液位和说明"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--线条-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/gray_bfbdbd" />
+            <!--泵坑液位曲线图-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#eaeaea"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp_4"
+                        android:paddingTop="@dimen/dp_4"
+                        android:text="泵坑液位"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_11" />
+
+                    <TextView
+                        android:id="@+id/report_view_PumpLevelAverage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp_4"
+                        android:paddingTop="@dimen/dp_4"
+                        android:text="泵坑平均液位"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_11" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_bfbdbd" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/mLineChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dip" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--线条-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/gray_bfbdbd" />
+            <!--液位曲线图-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#eaeaea"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="右岸箱涵水深"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <TextView
+                            android:layout_width="30dip"
+                            android:layout_height="5dip"
+                            android:layout_marginLeft="@dimen/dp_4"
+                            android:background="@color/greenyellow" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:paddingTop="@dimen/dp_4"
+                            android:text="左岸箱涵水深"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <TextView
+                            android:layout_width="30dip"
+                            android:layout_height="5dip"
+                            android:layout_marginLeft="@dimen/dp_4"
+                            android:background="@color/app_title_color" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_bfbdbd" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/mLineChart_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dip" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--线条-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/gray_bfbdbd" />
+
+            <!--说明-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#eaeaea"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:paddingTop="@dimen/dp_4"
+                    android:text="说明"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_11" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_bfbdbd" />
+
+                <TextView
+                    android:id="@+id/report_view_Memo"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="left|top"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:paddingTop="@dimen/dp_4"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_11" />
+
+
+            </LinearLayout>
+
+
+            <!--线条-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/gray_bfbdbd" />
+
+            <!--备注-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|top"
+                    android:text="备注"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|top"
+                    android:text="① 污泥外运量为两期每日总毛估量：当日车次×车辆荷载重量。"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_11" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|top"
+                    android:text="② 泵坑液位每日取0、4、8、12、16、20六个整点数据。"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_11" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

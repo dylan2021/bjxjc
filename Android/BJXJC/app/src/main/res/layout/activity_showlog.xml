@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="5dip"
+        android:background="#f37249"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="20dp">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="5dip"
+        android:background="#f37249"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="45dp">
+
+
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_weight="1"
+            android:text="错误报告"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            />
+
+
+        <TextView
+            android:id="@+id/bt_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="复制内容"
+            android:layout_marginRight="5dip"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="0dip">
+
+            <WebView
+                android:id="@+id/web_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </WebView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#8f8f8f"
+            android:orientation="horizontal"
+            android:layout_height="1dp">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="45dp">
+            <Button
+                android:id="@+id/bt_send"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="发送"
+                android:textColor="#8f8f8f"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="450dp" />
+
+            <LinearLayout
+                android:layout_width="1dip"
+                android:background="#8f8f8f"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_cancel"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="关闭"
+                android:textColor="#8f8f8f"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="450dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

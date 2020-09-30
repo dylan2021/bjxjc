@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_lin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:padding="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/item_list_title_style"
+                android:text="上报时间：" />
+
+            <TextView
+                android:id="@+id/item_1"
+                android:layout_width="0dip"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_lgray"
+                />
+
+            <TextView
+                style="@style/item_list_title_style"
+                android:text="上报人：" />
+
+            <TextView
+                android:id="@+id/item_2"
+                style="@style/item_list_body_style" />
+
+
+
+    </LinearLayout>
+    <include layout="@layout/layout_list_space" />
+    </LinearLayout>
+
+</LinearLayout>

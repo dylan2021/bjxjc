@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/witle"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dip">
+        <!--地图-->
+        <com.esri.android.map.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <!--工具栏-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <!--定位到当前位置-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/bt_witle_02"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_5"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/tv_map_location"
+                    android:layout_width="31dip"
+                    android:layout_height="31dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="22dip"
+                        android:layout_height="22dip"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:layout_marginBottom="@dimen/dp_3"
+                        android:gravity="center"
+                        android:src="@drawable/ic_my_location_black_24dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--预留-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_3"></LinearLayout>
+            <!--缩放工具-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/bt_witle_02"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_map_in"
+                        android:layout_width="25dip"
+                        android:layout_height="25dip"
+                        android:gravity="center"
+                        android:text="＋"
+                        android:textColor="@color/app_title_color"
+                        android:textSize="@dimen/sp_20"
+
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:background="@color/lightgray"
+                        android:gravity="center"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:id="@+id/tv_map_out"
+                        android:layout_width="25dip"
+                        android:layout_height="25dip"
+                        android:gravity="center"
+                        android:text="－"
+                        android:textColor="@color/app_title_color"
+                        android:textSize="@dimen/sp_20"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:scrollbarThumbVertical="@drawable/scrollbar_ver_thumb">
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_2">
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="年        份" />
+
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/fd_2"
+                        style="@style/from_field_spinner_style"
+                        android:text="" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="地        点" />
+
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/fd_4"
+                        style="@style/from_field_style"
+                        android:text="" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="类        型" />
+
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/fd_3"
+                        style="@style/from_field_spinner_style"
+                        android:text="" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="道        路" />
+
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/fd_8"
+                        style="@style/from_field_style"
+                        android:text="" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="值  守  人" />
+
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/fd_9"
+                        style="@style/from_field_spinner_style"
+                        android:text="" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="值守人电话" />
+
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/fd_10"
+                        style="@style/from_field_style"
+                        android:text="" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="积水原因" />
+
+                        <include layout="@layout/item_must" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/fd_11"
+                        style="@style/from_field_spinner_style"
+                        android:text="" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="备        注" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/fd_12"
+                        style="@style/from_field_style"
+                        android:text="" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--底部提交按钮-->
+    <include layout="@layout/layout_bottom_save_bt" />
+</LinearLayout>

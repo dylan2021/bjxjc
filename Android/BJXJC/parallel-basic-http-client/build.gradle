@@ -1,0 +1,51 @@
+/*buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.3'
+    }
+}
+repositories {
+    mavenCentral()
+}*/
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/basic-http-client-android-0.88.jar')
+}
+
+//修改jar名字+将指定jar生成的地方
+task makeJar(type:Copy){
+    //如果之前存在，则先删除
+    delete 'build/libs/parallel-basic-http-client.jar'
+    //设置拷贝的文件
+    from('build/intermediates/packaged-classes/debug/')
+    //生成jar包后的文件目录位置
+    into('build/libs/')
+    //include,exclude参数来设置过滤
+    include('classes.jar')
+    //重命名
+    rename('classes.jar','parallel-basic-http-client.jar')
+}
+
+makeJar.dependsOn(build)
+
+apply from: '../maven_push.gradle'
+

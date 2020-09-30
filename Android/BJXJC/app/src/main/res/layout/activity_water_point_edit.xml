@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/witle"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/activity_title_bar" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_ver_thumb">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/water_jichu_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_color"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp_5"
+                        android:text="基础信息"
+                        android:textColor="@color/label_text_color"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/water_jichu_tv_relation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_blue_01"
+                        android:padding="@dimen/dp_5"
+                        android:text="快速关联易淹点"
+                        android:textColor="@color/witle"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/water_jichu_tv_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_5"
+                        android:text="点击展开"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/from_lin_style">
+
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="编        号" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/tv_SeepeNo"
+                        style="@style/from_field_style" />
+                </LinearLayout>
+
+
+                <View style="@style/style_line_1px" />
+
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="位        置" />
+
+                        <include layout="@layout/item_must" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/water_loc_et"
+                        style="@style/from_field_style" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/measures_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View style="@style/style_line_1px" />
+
+
+                    <LinearLayout style="@style/from_lin_style">
+
+                        <LinearLayout style="@style/from_title_lin_style">
+
+                            <TextView
+                                style="@style/from_title_style"
+                                android:text="是否预处理" />
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/cb_IsHandle"
+                            style="@style/from_field_style"
+                            android:button="@drawable/checkbox_selector1" />
+
+                    </LinearLayout>
+
+
+                    <View style="@style/style_line_1px" />
+
+
+                    <LinearLayout style="@style/from_lin_style">
+
+                        <LinearLayout style="@style/from_title_lin_style">
+
+                            <TextView
+                                style="@style/from_title_style"
+                                android:text="预处理措施" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_Measures"
+                            style="@style/from_field_spinner_style" />
+
+
+                    </LinearLayout>
+
+
+                    <View style="@style/style_line_1px" />
+
+                    <LinearLayout
+                        android:id="@+id/submit_yuchuli_lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/submit_yuchuli"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dip"
+                            android:layout_margin="@dimen/dp_5"
+                            android:background="@drawable/bt_blue_01"
+                            android:text="操作保存"
+                            android:textColor="@color/baise"
+                            android:textSize="@dimen/sp_14" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/water_jichu_lin_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View style="@style/style_line_1px" />
+
+
+                    <LinearLayout style="@style/from_lin_style">
+
+                        <LinearLayout style="@style/from_title_lin_style">
+
+                            <TextView
+                                style="@style/from_title_style"
+                                android:text="所属预警" />
+
+                            <include layout="@layout/item_must" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/belong_warm_tv"
+                            style="@style/from_field_spinner_style" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View style="@style/style_line_1px" />
+
+                        <LinearLayout style="@style/from_lin_style">
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+                                    android:text="年        份" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/tv_Year"
+                                style="@style/from_field_style"
+                                android:inputType="number" />
+
+
+                        </LinearLayout>
+
+                        <View style="@style/style_line_1px" />
+
+                        <LinearLayout style="@style/from_lin_style">
+
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+                                    android:text="管  理  所" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/tv_ManagementOffice"
+                                style="@style/from_field_style" />
+
+
+                        </LinearLayout>
+
+                        <View style="@style/style_line_1px" />
+
+                        <LinearLayout style="@style/from_lin_style">
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+                                    android:text="街  道  办" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/tv_StreetOperation"
+                                style="@style/from_field_style" />
+                        </LinearLayout>
+
+                        <View style="@style/style_line_1px" />
+
+
+                        <LinearLayout style="@style/from_lin_style">
+
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+                                    android:text="社        区" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/tv_Community"
+                                style="@style/from_field_style" />
+
+
+                        </LinearLayout>
+
+                        <View style="@style/style_line_1px" />
+
+                        <LinearLayout style="@style/from_lin_style">
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+                                    android:text="道        路" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/tv_Road"
+                                style="@style/from_field_style" />
+                        </LinearLayout>
+
+
+                        <View style="@style/style_line_1px" />
+
+                        <LinearLayout style="@style/from_lin_style">
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+                                    android:text="值  守  人" />
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/tv_FloodUser"
+                                style="@style/from_field_style" />
+
+
+                        </LinearLayout>
+
+                        <View style="@style/style_line_1px" />
+
+                        <LinearLayout style="@style/from_lin_style">
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+                                    android:text="联系电话" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/tv_DistrictPhone"
+                                style="@style/from_field_style" />
+
+                        </LinearLayout>
+
+                        <View style="@style/style_line_1px" />
+
+                        <LinearLayout style="@style/from_lin_style">
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+                                    android:text="创  建  人" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_Creator"
+                                style="@style/from_field_style" />
+
+
+                        </LinearLayout>
+
+
+                        <View style="@style/style_line_1px" />
+
+                        <LinearLayout style="@style/from_lin_style">
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+                                    android:text="创建时间" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_CreateDT"
+                                style="@style/from_field_time_style" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout
+                android:id="@+id/water_jishui_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/bg_color"
+                        android:padding="@dimen/dp_5"
+                        android:text="积水信息"
+                        android:textColor="@color/label_text_color"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/water_jishui_tv_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg_color"
+                        android:padding="@dimen/dp_5"
+                        android:text="点击展开"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="积水深度"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_14" />
+
+
+                    <SeekBar
+                        android:id="@+id/seeper_depth"
+                        style="@android:style/Widget.Holo.SeekBar"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:min="0"
+                        android:progress="0" />
+
+                    <TextView
+                        android:id="@+id/tv_SeeperDepth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="0"
+                        android:textColor="@color/text_lgray"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="cm"
+                        android:textColor="@color/text_lgray"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="积水面积"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_14" />
+
+
+                    <SeekBar
+                        android:id="@+id/sb_SeeperArea"
+                        style="@android:style/Widget.Holo.SeekBar"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:max="1500"
+                        android:min="0"
+                        android:progress="0" />
+
+                    <TextView
+                        android:id="@+id/tv_seeper_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="0"
+                        android:textColor="@color/text_lgray"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="m³"
+                        android:textColor="@color/text_lgray"
+                        android:textSize="@dimen/sp_14" />
+
+
+                </LinearLayout>
+
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="积水起时" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_StartWaterDate"
+                        style="@style/from_field_time_style" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="积水原因" />
+
+                        <include layout="@layout/item_must" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/water_reason"
+                        style="@style/from_field_spinner_style"
+                        android:text=" " />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="警情描述" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/warm_detail_desc_tv"
+                        style="@style/from_field_spinner_style" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/from_lin_style"
+                    android:visibility="gone">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="是否紧急" />
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cb_is_urgent_handle"
+                        style="@style/from_field_style"
+                        android:button="@drawable/checkbox_selector1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/water_jishui_lin_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View style="@style/style_line_1px" />
+
+
+                    <LinearLayout style="@style/from_lin_style">
+
+                        <LinearLayout style="@style/from_title_lin_style">
+
+                            <TextView
+                                style="@style/from_title_style"
+                                android:text="积水来源" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/tv_SeeperSource"
+                            style="@style/from_field_style" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/from_lin_style"
+                        android:visibility="gone">
+
+                        <LinearLayout style="@style/from_title_lin_style">
+
+                            <TextView
+                                style="@style/from_title_style"
+                                android:text="影响车辆" />
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/cb_IsCarPass"
+                            style="@style/from_field_style"
+                            android:button="@drawable/checkbox_selector1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/from_lin_style"
+                        android:visibility="gone">
+
+                        <LinearLayout style="@style/from_title_lin_style">
+
+                            <TextView
+                                style="@style/from_title_style"
+                                android:text="积水等级" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_SeeperLevel"
+                            style="@style/from_field_spinner_style" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/from_lin_style"
+                        android:visibility="gone">
+
+                        <LinearLayout style="@style/from_title_lin_style">
+
+                            <TextView
+                                style="@style/from_title_style"
+                                android:text="半径(m)" />
+
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/tv_Radius"
+                            style="@style/from_field_style"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/water_chuzhi_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_color"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp_5"
+                        android:text="处置信息"
+                        android:textColor="@color/label_text_color"
+                        android:textSize="@dimen/sp_14" />
+
+
+                    <TextView
+                        android:id="@+id/report_center_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@drawable/bt_blue_01"
+                        android:padding="@dimen/dp_5"
+                        android:text="无法处置,上报控制室"
+                        android:textColor="@color/witle"
+                        android:textSize="@dimen/sp_10" />
+
+
+                    <TextView
+                        android:id="@+id/water_chuzhi_tv_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_5"
+                        android:text="点击展开"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/from_lin_style">
+
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="处置状态" />
+
+                        <include layout="@layout/item_must" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/from_field_style">
+
+                        <include layout="@layout/layout_ck_status" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="处置时间" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/dispose_date_tv"
+                        style="@style/from_field_time_style" />
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="处置队伍" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/dispose_team_tv"
+                        style="@style/from_field_spinner_style" />
+
+
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="留  守  人" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/dispose_person_tv"
+                        style="@style/from_field_spinner_style" />
+
+
+                </LinearLayout>
+
+                <View style="@style/style_line_1px" />
+
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="处置措施" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_WaterResult"
+                        style="@style/from_field_spinner_style" />
+                </LinearLayout>
+
+
+                <View style="@style/style_line_1px" />
+
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="是否消退" />
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cb_IsRegression"
+                        style="@style/from_field_style"
+                        android:button="@drawable/checkbox_selector1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/water_chuzhi_lin_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View style="@style/style_line_1px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout style="@style/from_lin_style">
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+                                    android:text="历时(min)" />
+
+                            </LinearLayout>
+
+                            <EditText
+
+                                android:id="@+id/tv_SeeperTime"
+                                style="@style/from_field_style" />
+                        </LinearLayout>
+
+                        <View style="@style/style_line_1px" />
+
+
+                        <LinearLayout style="@style/from_lin_style">
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+
+                                    android:text="投放人数" />
+
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/tv_DeliveryUser"
+                                style="@style/from_field_style"
+                                android:inputType="number"
+                                android:text="0" />
+
+
+                        </LinearLayout>
+
+                        <View style="@style/style_line_1px" />
+
+
+                        <LinearLayout style="@style/from_lin_style">
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+                                    android:text="投放车数" />
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/tv_DeliveryCar"
+                                style="@style/from_field_style"
+                                android:inputType="number"
+                                android:text="0" />
+                        </LinearLayout>
+
+
+                        <View style="@style/style_line_1px" />
+
+
+                        <LinearLayout style="@style/from_lin_style">
+
+                            <LinearLayout style="@style/from_title_lin_style">
+
+                                <TextView
+                                    style="@style/from_title_style"
+                                    android:text="整改措施" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/tv_CorrectiveMeasures"
+                                style="@style/from_field_style" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout style="@style/from_lin_style">
+
+                        <LinearLayout style="@style/from_title_lin_style">
+
+                            <TextView
+                                style="@style/from_title_style"
+                                android:text="到达时间" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_ArrivalDT"
+                            style="@style/from_field_time_style" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View style="@style/style_line_1px" />
+
+
+            <LinearLayout style="@style/from_lin_style">
+
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="附件状态" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/from_field_style">
+
+                    <include layout="@layout/layout_ck_file_status" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_file_upload" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip">
+
+        <Button
+            android:id="@+id/submit_dd"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/bt_blue_01"
+            android:text="确定到达"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/sp_14" />
+
+        <Button
+            android:id="@+id/submit_js"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/bt_red_02"
+            android:text="确定积水"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/sp_14" />
+
+        <Button
+            android:id="@+id/submit_no_js"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/bt_blue_01"
+            android:text="未积水"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/sp_14" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/bt_blue_01"
+            android:text="保存"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/witle"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_bar" />
+
+
+    <RelativeLayout
+        android:id="@+id/map_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="240dip">
+        <!--地图-->
+        <com.esri.android.map.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <!--工具栏-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="right"
+            android:orientation="vertical">
+
+
+            <!--定位到当前位置-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/bt_witle_02"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_5">
+
+                <LinearLayout
+                    android:id="@+id/tv_map_location"
+                    android:layout_width="31dip"
+                    android:layout_height="31dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="22dip"
+                        android:layout_height="22dip"
+                        android:layout_marginBottom="@dimen/dp_3"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:src="@drawable/ic_my_location_black_24dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--预留-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_3"></LinearLayout>
+            <!--缩放工具-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/bt_witle_02"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_map_in"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:gravity="center"
+                        android:text="＋"
+                        android:textColor="@color/app_title_color"
+                        android:textSize="@dimen/sp_20"
+
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@color/lightgray"
+                        android:gravity="center"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:id="@+id/tv_map_out"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:gravity="center"
+                        android:text="－"
+                        android:textColor="@color/app_title_color"
+                        android:textSize="@dimen/sp_20"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_ver_thumb">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/measures_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout style="@style/from_lin_style">
+
+                    <LinearLayout style="@style/from_title_lin_style">
+
+                        <TextView
+                            style="@style/from_title_style"
+                            android:text="位        置" />
+
+                        <include layout="@layout/item_must" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/water_loc_et"
+                        style="@style/from_field_style" />
+
+
+                </LinearLayout>
+
+
+                <View style="@style/style_line_1px" />
+
+
+            </LinearLayout>
+
+
+            <include layout="@layout/layout_file_upload" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="附件状态" />
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/from_field_style">
+
+                    <include layout="@layout/layout_ck_file_status" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/submit_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_5">
+
+        <Button
+            android:id="@+id/submit_js"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_red_02"
+            android:text="确定积水"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/sp_14" />
+
+        <Button
+            android:id="@+id/submit_no_js"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/bt_green_01"
+            android:text="未积水"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+</LinearLayout>

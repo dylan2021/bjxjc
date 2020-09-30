@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/ck_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/checkbox_selector1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/ck_file_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预处理"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone" />
+
+
+    <CheckBox
+        android:id="@+id/ck_2"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/checkbox_selector1" />
+
+    <TextView
+        android:id="@+id/ck_file_tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未处理"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12" />
+
+
+    <CheckBox
+        android:id="@+id/ck_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/checkbox_selector1" />
+
+    <TextView
+        android:id="@+id/ck_file_tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="处理中"
+        android:layout_marginRight="@dimen/dp_5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12" />
+
+
+    <CheckBox
+        android:id="@+id/ck_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/checkbox_selector1" />
+
+    <TextView
+        android:id="@+id/ck_file_tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已处理"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12" />
+</LinearLayout>

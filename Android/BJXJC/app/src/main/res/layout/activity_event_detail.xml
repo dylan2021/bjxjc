@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/witle"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/activity_title_bar" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="@dimen/main_margin_left_x"
+        android:paddingTop="@dimen/line_height"
+        android:scrollbarThumbVertical="@drawable/scrollbar_ver_thumb">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="所属部门" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_01"
+                    style="@style/from_field_spinner_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="事件类型" />
+
+                    <include layout="@layout/item_must" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_02"
+                    style="@style/from_field_spinner_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="所属预警" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_03"
+                    style="@style/from_field_spinner_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="发生时间" />
+
+                    <include layout="@layout/item_must" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_04"
+                    style="@style/from_field_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="上  报  人" />
+
+                    <include layout="@layout/item_must" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_05"
+                    style="@style/from_field_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="等        级" />
+
+                    <include layout="@layout/item_must" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_06"
+                    style="@style/from_field_spinner_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="事件描述" />
+
+                    <include layout="@layout/item_must" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/tv_07"
+                    style="@style/from_field_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="处理状态" />
+
+                    <include layout="@layout/item_must" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_08"
+                    style="@style/from_field_spinner_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="历时(min)" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/tv_09"
+                    style="@style/from_field_style"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="处  理  人" />
+
+                    <include layout="@layout/item_must" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_10"
+                    style="@style/from_field_spinner_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="知  会  人" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_11"
+                    style="@style/from_field_spinner_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="解决时间" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_12"
+                    style="@style/from_field_time_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="解  决  人" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/tv_13"
+                    style="@style/from_field_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="解决描述" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/tv_14"
+                    style="@style/from_field_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <include layout="@layout/layout_file_upload" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--底部提交按钮-->
+    <include layout="@layout/layout_bottom_save_bt" />
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_lin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/item_photo"
+                android:layout_width="81dip"
+                android:layout_height="70dip"
+                android:src="@mipmap/img_noimg"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:textColor="@color/app_title_color"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                android:id="@+id/item_AssetState"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_red_01"
+                android:gravity="center"
+                android:padding="@dimen/dp_2"
+                android:text="未处理"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_8" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/item_list_title_style"
+                android:text="设备编号：" />
+
+            <TextView
+                android:id="@+id/item_no"
+                style="@style/item_list_body_style" />
+
+            <TextView
+                style="@style/item_list_title_style"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="设备类型：" />
+
+            <TextView
+                android:id="@+id/item_EquTypeID"
+                style="@style/item_list_body_style" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/item_list_lin_style">
+
+            <TextView
+                style="@style/item_list_title_style"
+                android:text="型        号：" />
+
+            <TextView
+                android:id="@+id/item_Spec"
+                android:maxLines="2"
+                android:ellipsize="end"
+                style="@style/item_list_body_style" />
+
+            <TextView
+
+                style="@style/item_list_title_style"
+                android:text="规        格：" />
+
+            <TextView
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:id="@+id/item_Models"
+                style="@style/item_list_body_style" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/item_list_lin_style">
+
+            <TextView
+
+                style="@style/item_list_title_style"
+                android:text="区域位置：" />
+
+            <TextView
+                android:id="@+id/item_PumpRoomID"
+                style="@style/item_list_body_style" />
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_list_space" />
+
+</LinearLayout>

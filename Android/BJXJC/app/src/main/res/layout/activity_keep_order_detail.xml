@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baise"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_bar" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_ver_thumb">
+
+        <LinearLayout
+            android:layout_margin="@dimen/dm020"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/from_lin_style">
+                <LinearLayout style="@style/from_title_lin_style">
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="工单名称" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/tv_F_Title"
+                    style="@style/from_field_style"
+                    android:enabled="false" />
+            </LinearLayout>
+            <View style="@style/style_line_1px" />
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="设备名称" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_EquName"
+                    style="@style/from_field_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="任务日期" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_task_date"
+                    style="@style/from_field_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="执  行  人" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/executorNameTv"
+                    style="@style/from_field_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="保养内容" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/keep_content_tv"
+                    style="@style/from_field_style" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout style="@style/from_lin_style">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="逾期原因" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/overtime_reson_tv"
+                    style="@style/from_field_style"
+                    android:enabled="false" />
+            </LinearLayout>
+
+            <View style="@style/style_line_1px" />
+
+            <LinearLayout
+                style="@style/from_lin_style"
+                android:visibility="gone">
+
+                <LinearLayout style="@style/from_title_lin_style">
+
+                    <TextView
+                        style="@style/from_title_style"
+                        android:text="备        注" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/tv_Remark"
+                    style="@style/from_field_style"
+                    android:enabled="false" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/submit_qd"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/dp_2"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:layout_weight="1"
+            android:background="@drawable/bt_blue_01"
+            android:text="确认"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/dp_16" />
+
+        <Button
+            android:id="@+id/submit_ks"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/dp_2"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:layout_weight="1"
+            android:background="@drawable/bt_blue_01"
+            android:text="开始"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/dp_16" />
+
+        <Button
+            android:id="@+id/submit_sc"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/dp_2"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:layout_weight="1"
+            android:background="@drawable/bt_red_01"
+            android:text="删除"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/dp_16" />
+
+        <Button
+            android:id="@+id/submit_gq"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/dp_2"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:layout_weight="1"
+            android:background="@drawable/bt_gray_02"
+            android:text="挂起"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/dp_16" />
+
+        <Button
+            android:id="@+id/submit_zp"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/dp_2"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:layout_weight="1"
+            android:background="@drawable/bt_orange_01"
+            android:text="转派"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/dp_16" />
+
+        <Button
+            android:id="@+id/submit_gb"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/dp_2"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:layout_weight="1"
+            android:background="@drawable/bt_gray_02"
+            android:text="关闭"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/dp_16" />
+
+        <Button
+            android:id="@+id/submit_js"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/dp_2"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:layout_weight="1"
+            android:background="@drawable/bt_blue_01"
+            android:text="结束"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/dp_16" />
+
+        <Button
+            android:id="@+id/submit_bc"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/dp_2"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:layout_weight="1"
+            android:background="@drawable/bt_blue_01"
+            android:text="保存"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/dp_16" />
+
+        <Button
+            android:id="@+id/submit_hf"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/dp_2"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:layout_weight="1"
+            android:background="@drawable/bt_blue_01"
+            android:text="恢复"
+            android:textColor="@color/baise"
+            android:textSize="@dimen/dp_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/char_Keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical" />
+
+</LinearLayout>

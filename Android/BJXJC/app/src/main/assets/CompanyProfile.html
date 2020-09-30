@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="Author" contect="北京新机场"/>
+    <link rel="stylesheet" href="css/lgapp.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/dateformat.js"></script>
+    <script src="js/highcharts.js"></script>
+</head>
+  <body style="padding: 0px;margin: 0px;width:100%;">
+  
+    <script type="text/javascript">
+    $(function(){
+      //eval("var data = "+window.AndroidWebView+"");
+      var datas = window.AndroidWebView.getData();
+        $('body').html(datas);
+
+    })
+
+    function showInfoFromJava(msg){  
+      alert("提示"+msg);
+    } 
+   
+    </script>
+  </body>
+</html>
